@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
 import GlassSurface from './GlassSurface';
 import { profile } from '../data/content';
+import profilePhoto from '../assets/IMG_2802.jpeg';
 import styles from './AboutSection.module.css';
 
 export default function AboutSection() {
@@ -35,7 +36,7 @@ export default function AboutSection() {
             <GlassSurface className={styles.bioCard}>
               <div className={styles.photoRow}>
                 <div className={styles.photoThumb}>
-                  <img src={profile.photo} alt={profile.name} className={styles.photo} />
+                  <img src={profilePhoto} alt={profile.name} className={styles.photo} />
                 </div>
                 <div>
                   <div className={styles.bioName}>{profile.name}</div>

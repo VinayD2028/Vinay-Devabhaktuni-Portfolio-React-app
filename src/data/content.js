@@ -14,8 +14,8 @@ export const profile = {
   github: "https://github.com/VinayD2028",
   linkedin: "https://www.linkedin.com/in/vinay-devabhaktuni-b974162b0",
   photo: "/src/assets/IMG_2802.jpeg",
-  resumeDE: "/src/assets/resume_data_engineer.pdf",
-  resumeSWE: "/src/assets/resume_software_developer.pdf",
+  resumeDE: "/resume_data_engineer.pdf",
+  resumeSWE: "/resume_software_developer.pdf",
   summary: "I'm a Software & Data Engineer who combines backend expertise with data engineering to solve real problems — not write pointless code. I build robust full-stack applications with Java/Spring, and end-to-end data pipelines on AWS. RAG systems, ML pipelines, and vector search with FAISS are my bread and butter. Co-author, IEEE article on trust engineering for AI-generated code. AWS Academy Data Engineering certified.",
   about: [
     "I build scalable systems that actually work. Backend expertise meets data engineering — end-to-end, production-ready, and documented.",

@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Play, Info, Github, ArrowRight } from 'lucide-react';
 import { profile, featured } from '../data/content';
+import profilePhoto from '../assets/IMG_2802.jpeg';
 import styles from './HeroBanner.module.css';
 
 const containerVariants = {
@@ -36,7 +37,7 @@ export default function HeroBanner({ onOpenFeatured }) {
           transition={{ duration: 0.9, ease: [0.34, 1.56, 0.64, 1], delay: 0.1 }}
         >
           <div className={styles.photoRing}>
-            <img src={profile.photo} alt={profile.name} className={styles.photo} />
+            <img src={profilePhoto} alt={profile.name} className={styles.photo} />
           </div>
           <div className={styles.statusDot} aria-label="Available" />
         </motion.div>
