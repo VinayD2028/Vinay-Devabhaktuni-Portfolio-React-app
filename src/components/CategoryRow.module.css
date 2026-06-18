@@ -1,0 +1,57 @@
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5% 56px;
+}
+
+.rowHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.rowAccent {
+  width: 3px;
+  height: 22px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.rowTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-white);
+  letter-spacing: -0.01em;
+}
+
+.rowCount {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-muted);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  padding: 2px 8px;
+}
+
+/* 2-column grid (default) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+/* 1-column grid (research, skills) */
+.gridSingle {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+
+@media (max-width: 640px) {
+  .grid { grid-template-columns: 1fr; }
+  .row { padding: 0 4% 40px; }
+}

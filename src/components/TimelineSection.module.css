@@ -1,0 +1,53 @@
+.section { padding: 60px 0; }
+.inner { max-width: 900px; margin: 0 auto; padding: 0 5%; }
+
+.header { margin-bottom: 32px; }
+.rowHeader { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
+.rowAccent { width: 3px; height: 22px; border-radius: 2px; flex-shrink: 0; }
+.title { font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 700; color: var(--color-white); letter-spacing: -0.02em; }
+.rowCount { font-family: var(--font-mono); font-size: 11px; color: var(--color-muted); background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); border-radius: 10px; padding: 2px 8px; }
+.desc { font-family: var(--font-mono); font-size: 10px; color: var(--color-muted); letter-spacing: 0.08em; text-transform: uppercase; margin-left: 15px; }
+
+/* Timeline */
+.timeline { position: relative; padding-left: 36px; }
+.line { position: absolute; left: 6px; top: 12px; bottom: 12px; width: 2px; border-radius: 1px; }
+
+/* Entry */
+.entry { position: relative; margin-bottom: 20px; }
+.entry:last-child { margin-bottom: 0; }
+.dotWrap { position: absolute; left: -36px; top: 22px; width: 14px; display: flex; align-items: center; justify-content: center; }
+.dot { width: 14px; height: 14px; border-radius: 50%; border: 3px solid var(--color-bg); flex-shrink: 0; }
+
+/* Card */
+.card { border-radius: var(--radius-lg) !important; padding: 18px 20px !important; position: relative; overflow: hidden; }
+.accentBar { position: absolute; top: 0; left: 0; right: 0; height: 2px; }
+.cardTop { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.cardMeta { flex: 1; min-width: 0; }
+.cardTitle { font-size: 1rem; font-weight: 600; color: var(--color-white); margin-bottom: 3px; }
+.cardSub { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.02em; margin-bottom: 8px; }
+.cardDesc { font-size: 13.5px; color: var(--color-white2); line-height: 1.65; }
+
+/* GPA badge */
+.gpaBadge { text-align: center; padding: 6px 10px; border-radius: 8px; border: 1px solid; flex-shrink: 0; }
+.gpaValue { font-family: var(--font-mono); font-size: 1.1rem; font-weight: 700; line-height: 1; }
+.gpaLabel { font-family: var(--font-mono); font-size: 9px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-muted); margin-top: 2px; }
+
+.expandBtn { width: 30px; height: 30px; border-radius: 6px; background: var(--glass-bg); border: 1px solid var(--glass-border); color: var(--color-muted); display: flex; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0; transition: color 0.2s; }
+.expandBtn:hover { color: var(--color-white); }
+
+/* Tags */
+.tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 12px; }
+.tag { font-family: var(--font-mono); font-size: 10px; padding: 2px 8px; border-radius: 12px; border: 1px solid; white-space: nowrap; }
+
+/* Expanded */
+.detailDivider { height: 1px; background: var(--glass-border); margin: 14px 0; }
+.detailLine { font-size: 13px; color: var(--color-white2); line-height: 1.7; margin-bottom: 5px; }
+.certLabel { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-muted); margin-bottom: 8px; }
+.certTags { display: flex; flex-wrap: wrap; gap: 6px; }
+.certTag { font-family: var(--font-mono); font-size: 10px; padding: 3px 9px; border-radius: 12px; background: rgba(0,200,240,0.08); border: 1px solid rgba(0,200,240,0.2); color: var(--color-cyan); }
+
+@media (max-width: 600px) {
+  .timeline { padding-left: 24px; }
+  .line { left: 4px; }
+  .dotWrap { left: -24px; }
+}

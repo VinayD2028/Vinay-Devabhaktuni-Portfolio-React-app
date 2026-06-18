@@ -1,0 +1,72 @@
+/* ============================================
+   DESIGN TOKENS — edit here to retheme
+   ============================================ */
+:root {
+  /* Core palette */
+  --color-bg:          #060810;
+  --color-bg2:         #0C1020;
+  --color-surface:     #111827;
+  --color-cyan:        #00C8F0;
+  --color-cyan-dim:    rgba(0,200,240,0.18);
+  --color-green:       #00E5A0;
+  --color-purple:      #A78BFA;
+  --color-amber:       #FFB800;
+  --color-red:         #FF4D6A;
+  --color-white:       #F0F6FF;
+  --color-white2:      #B8CCEB;
+  --color-muted:       #5A7A9A;
+  --color-border:      rgba(255,255,255,0.08);
+  --color-border-cyan: rgba(0,200,240,0.2);
+
+  /* Glass surface */
+  --glass-bg:          rgba(255,255,255,0.055);
+  --glass-bg-hover:    rgba(255,255,255,0.09);
+  --glass-blur:        18px;
+  --glass-blur-heavy:  32px;
+  --glass-border:      rgba(255,255,255,0.12);
+  --glass-highlight:   rgba(255,255,255,0.18);
+  --glass-shadow:      0 8px 32px rgba(0,0,0,0.45), 0 1px 0 rgba(255,255,255,0.06) inset;
+  --glass-shadow-lg:   0 24px 64px rgba(0,0,0,0.6), 0 1px 0 rgba(255,255,255,0.08) inset;
+
+  /* Typography */
+  --font-display:  'Space Grotesk', sans-serif;
+  --font-mono:     'Space Mono', monospace;
+  --font-body:     'Space Grotesk', sans-serif;
+
+  /* Spacing */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  40px;
+  --space-2xl: 64px;
+
+  /* Radius */
+  --radius-sm:  8px;
+  --radius-md:  14px;
+  --radius-lg:  20px;
+  --radius-xl:  28px;
+
+  /* Motion */
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast:   150ms;
+  --duration-base:   280ms;
+  --duration-slow:   480ms;
+
+  /* Z layers */
+  --z-base:    1;
+  --z-card:    10;
+  --z-nav:     100;
+  --z-modal:   200;
+  --z-overlay: 190;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-slow: 0ms;
+  }
+}

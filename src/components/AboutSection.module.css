@@ -1,0 +1,51 @@
+.section { padding: 80px 0; }
+.inner { max-width: 900px; margin: 0 auto; padding: 0 5%; }
+.header { margin-bottom: 32px; }
+.rowHeader { display: flex; align-items: center; gap: 12px; }
+.rowAccent { width: 3px; height: 22px; border-radius: 2px; background: var(--color-cyan); }
+.title { font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 700; color: var(--color-white); letter-spacing: -0.02em; }
+
+/* Single column stack */
+.stack { display: flex; flex-direction: column; gap: 16px; }
+
+/* Bio card */
+.bioCard { border-radius: var(--radius-xl) !important; padding: 28px !important; display: flex; flex-direction: column; gap: 20px; }
+.photoRow { display: flex; align-items: center; gap: 16px; }
+.photoThumb { width: 72px; height: 72px; border-radius: 50%; flex-shrink: 0; overflow: hidden; border: 2px solid var(--color-cyan); box-shadow: 0 0 16px rgba(0,200,240,0.2); }
+.photo { width: 100%; height: 100%; object-fit: cover; object-position: 50% 58%; transform: scale(1.15); transform-origin: 50% 20%; }
+.bioName { font-size: 1.1rem; font-weight: 700; color: var(--color-white); margin-bottom: 2px; }
+.bioTitle { font-family: var(--font-mono); font-size: 11px; color: var(--color-cyan); letter-spacing: 0.06em; margin-bottom: 4px; }
+.bioLocation { font-size: 12px; color: var(--color-muted); }
+.bioText { display: flex; flex-direction: column; gap: 12px; padding-top: 4px; border-top: 1px solid var(--glass-border); }
+.bioPara { font-size: 14.5px; color: var(--color-white2); line-height: 1.75; }
+.bioQuote { font-size: 14px; color: var(--color-cyan); font-family: var(--font-mono); line-height: 1.6; padding: 10px 14px; border-left: 2px solid var(--color-cyan); background: rgba(0,200,240,0.05); border-radius: 0 6px 6px 0; }
+.socialRow { display: flex; gap: 10px; flex-wrap: wrap; padding-top: 4px; border-top: 1px solid var(--glass-border); }
+.socialLink { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 20px; border: 1px solid var(--glass-border); color: var(--color-muted); font-family: var(--font-mono); font-size: 11px; transition: border-color 0.2s, color 0.2s, background 0.2s; }
+.socialLink:hover { border-color: var(--color-cyan); color: var(--color-cyan); background: var(--color-cyan-dim); }
+
+/* 2-col for mini cards */
+.twoCol { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.miniCard { border-radius: var(--radius-lg) !important; padding: 20px !important; }
+.cardLabel { font-family: var(--font-mono); font-size: 11px; color: var(--color-cyan); letter-spacing: 0.08em; margin-bottom: 14px; text-transform: uppercase; }
+
+/* Building */
+.buildingList { display: flex; flex-direction: column; gap: 10px; }
+.buildingItem { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: var(--color-white2); line-height: 1.5; }
+.buildingText { flex: 1; }
+
+/* Credentials */
+.credRow { display: flex; align-items: flex-start; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--glass-border); }
+.credRow:last-child { border-bottom: none; }
+.credDot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+.credLabel { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-muted); margin-bottom: 1px; }
+.credValue { font-size: 13px; color: var(--color-white2); }
+
+/* Open card */
+.openCard { border-radius: var(--radius-lg) !important; padding: 20px !important; }
+.openTitle { font-family: var(--font-mono); font-size: 11px; color: var(--color-green); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px; }
+.openList { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.openTag { font-size: 11px; padding: 3px 10px; border-radius: 12px; background: rgba(0,229,160,0.08); border: 1px solid rgba(0,229,160,0.2); color: var(--color-green); font-family: var(--font-mono); }
+.openCta { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 12px; color: var(--color-cyan); padding: 8px 16px; border: 1px solid rgba(0,200,240,0.25); border-radius: 6px; background: var(--color-cyan-dim); transition: background 0.2s; }
+.openCta:hover { background: rgba(0,200,240,0.2); }
+
+@media (max-width: 600px) { .twoCol { grid-template-columns: 1fr; } }
